@@ -754,7 +754,7 @@ header .box-left botton:hover {
 
 footer {
     display: flow-root;
-    padding: 45px 90px 45px 90px;
+    padding: 45px 0px 45px 0px;
 }
 
 footer div {
@@ -919,19 +919,126 @@ footer div .link:hover {
 
 
 
+@media(max-width:991px) {
+    .container {
+        width: 750px;
+    }
+
+    header .box-left nav {
+        margin: 25px 0px 0px 0px;
+    }
+
+    header .box-left nav a {
+        font-size: 12px;
+        line-height: 17px;
+    }    
+
+    header .box-left .phone {
+        margin: 20px 0px 30px 0px;
+    }
+
+    header ul li a {
+        font-size: 20px;
+    }
+
+    header .box-left botton {
+        width: 200px;
+        font-size: 16px;
+        margin: 40px 0px 0px 0px;
+        padding: 10px 0px 10px 0px;
+    }    
+
+    .wr-website-development-info h2, 
+    .wr-development-chat-bot h2, 
+    .wr-project-optimization h2, 
+    .wr-portfolio h2,
+    .wr-about-us h2,
+    .wr-contact-info h2 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .wr-website-development-info p, 
+    .wr-development-chat-bot p, 
+    .wr-project-optimization p,
+    .wr-about-us p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .wr-chat-bot-info div h3 {
+        font-size: 18px;
+    }
+
+    .wr-chat-bot-info div .title-space-right, .wr-chat-bot-info div .title {
+        font-size: 18px;
+    }
+
+    .wr-chat-bot-info div .info-space-right, .wr-chat-bot-info div p {
+        font-size: 16px;
+    }
+
+    .wr-software-development-title .left {
+        width: 30%;
+    }
+
+    .wr-software-development-title .right {
+        width: 70%;    
+        margin: 0px 0px 0px 0px;
+    }
+    
+    .wr-software-development-title .left h2 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .wr-software-development-title .right span {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .info-space-right br, .wr-chat-bot-info div p br {
+        display: none;
+    }    
+
+    .wr-project-optimization .wr-ul li {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .wr-project-optimization botton {
+        width: 200px;
+        font-size: 16px;
+        margin: 40px 0px 0px 0px;
+        padding: 10px 0px 10px 0px;
+    }     
+
+    .wr-feedback .right h2 {
+        font-size: 21px;
+        line-height: 30px;
+    }
+
+    .wr-contact-info div {
+        font-size: 19px;
+        line-height: 24px;
+    }    
+
+    footer div p {
+        font-size: 18px;
+    }
+
+    footer ul li a {
+        font-size: 15px;
+    }    
+
+    footer div .link {
+        font-size: 15px;        
+    }
+}
 
 
 
-
-
-
-
-
-
-
-
-
-@media(max-width:480px) {
+@media(max-width:767px) {
     .container {
         width: 100%;
     }
