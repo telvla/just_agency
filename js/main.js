@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(() => {
     heightScreenDevelopmentSlider();
 
     var btn_menu = document.getElementsByClassName('mob-box-right')[0];
@@ -25,16 +25,8 @@ function scrollBlock(wr_block) {
     $("html").animate({scrollTop: destination}, 2100);
 }
 
-
 function heightScreenDevelopmentSlider() {
     var height_screen_development_slider = document.getElementById('screen-dev-slider').offsetHeight
     
     $(".wr-website-development-slider .box-left").css('margin-top', Number(height_screen_development_slider) - 60);
 }
-
-
-
-
-
-
-
