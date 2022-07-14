@@ -19,7 +19,7 @@ function scrollBlock(wr_block) {
         indent = 90;
     }
 
-    var destination = $('.' + wr_block).offset().top - indent;
+    var destination = $('.' + wr_block).offset().top - Number(indent);
 
     $("body:not(:animated)").animate({scrollTop: destination}, 1000);
     $("html").animate({scrollTop: destination}, 2100);
@@ -29,7 +29,7 @@ function scrollBlock(wr_block) {
 function heightScreenDevelopmentSlider() {
     var height_screen_development_slider = document.getElementById('screen-dev-slider').offsetHeight
     
-    $(".wr-website-development-slider .box-left").css('margin-top', height_screen_development_slider - 60);
+    $(".wr-website-development-slider .box-left").css('margin-top', Number(height_screen_development_slider) - 60);
 }
 
 
