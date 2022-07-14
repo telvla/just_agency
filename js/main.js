@@ -1,15 +1,15 @@
 $(document).ready(function() {
-    var height_screen_development_slider = document.getElementById('screen-dev-slider').offsetHeight
-    
-    $(".wr-website-development-slider .box-left").css('margin-top', height_screen_development_slider - 60);
+    heightScreenDevelopmentSlider();
 
     var btn_menu = document.getElementsByClassName('mob-box-right')[0];
     btn_menu.addEventListener('click', function(){
 
         alert('Нажата кнопка меню');
     });
+});
 
-
+$(window).resize(() => {
+    heightScreenDevelopmentSlider();
 });
 
 function scrollBlock(wr_block) {
@@ -26,7 +26,11 @@ function scrollBlock(wr_block) {
 }
 
 
-
+function heightScreenDevelopmentSlider() {
+    var height_screen_development_slider = document.getElementById('screen-dev-slider').offsetHeight
+    
+    $(".wr-website-development-slider .box-left").css('margin-top', height_screen_development_slider - 60);
+}
 
 
 
