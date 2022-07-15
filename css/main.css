@@ -67,19 +67,6 @@ header .box-left .phone:hover {
     color: #000;
 }
 
-/*
-header p {
-    padding: 0px;
-    margin: 5px 0px 5px 0px;
-    font-size: 40px;
-    color: #313131;
-}
-
-header p:nth-child(1) {
-    margin: 30px 0px 25px 0px;
-} 
-*/
-
 header ul {
     margin: 0px 0px 0px -40px;
 }
@@ -810,9 +797,6 @@ footer div .link:hover {
     display: none;
 }
 
-
-
-
 .container {
     width: 1400px;
     margin: 0 auto;
@@ -860,7 +844,7 @@ footer div .link:hover {
         font-size: 17px;
     }
 
-    wr-chat-bot-info div .title-space-right {
+    .wr-chat-bot-info div .title-space-right {
         font-size: 22px;
     }
 
@@ -914,10 +898,7 @@ footer div .link:hover {
     footer {
         margin: 60px 15px 0px 15px;
     }
-
 }
-
-
 
 @media(max-width:991px) {
     .container {
@@ -1035,8 +1016,6 @@ footer div .link:hover {
         font-size: 15px;        
     }
 }
-
-
 
 @media(max-width:767px) {
     .container {
