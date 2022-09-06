@@ -3,17 +3,83 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Компания Just Agency - разработка сайтов на заказ</title>
+        <meta name="description" content="Разработка сайтов на заказ">
+        <meta name="keywords" content="заказать интернет сайт, сайт на заказа, чат-боты, оптимизация сайтов, разработка по, заказать сайт, развитие и поддержка проектов">
 
         <base href="">
-        
+
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">        
+    
+        <meta property="og:image" content="">
+        <meta property="og:image:width" content="">
+        <meta property="og:image:height" content="">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
     </head>
     <body>
         <section class="container">    
             <header>
+                <div id="wr-mobile-menu">
+                    <div onclick="closeMobileMenu()" class="btn-close">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <ul class="top-mobile-menu-ul">
+                        <li>
+                            <a onclick="scrollBlock('wr-website-development-info')">
+                                Сайты
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="scrollBlock('wr-development-chat-bot')">
+                                Чат-боты
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="scrollBlock('wr-software-development-title')">
+                                Разработка ПО
+                            </a>
+                        </li> 
+                        <li>
+                            <a onclick="scrollBlock('wr-project-optimization')">
+                                Оптимизация
+                            </a>
+                        </li>	
+                        <li>
+                            <a onclick="scrollBlock('wr-how-we-work')">
+                                Как мы работаем
+                            </a>
+                        </li>					                        
+                        <li>
+                            <a onclick="scrollBlock('wr-portfolio')">
+                                Портфолио
+                            </a>
+                        </li>					                        
+                        <li>
+                            <a onclick="scrollBlock('wr-contact-info')">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="line"></div>
+                    <div class="wr-mobile-menu-footer">
+                        <a class="letter-spacing-03" href="tel:+79990993884">
+                            +7 (999) 099-38-84
+                        </a>
+                        <a class="mobile-link-mail" href="mailto:manager@just-agency.ru">
+                            manager@just-agency.ru
+                        </a>
+                    </div>
+                </div>
                 <div class="mob-box-left">
-                    logo
+                    <img class="mobile-logo" src="/img/logo.png" />
                 </div>
                 <div class="mob-box-right">
                     <div>
@@ -26,16 +92,16 @@
                     <img src="/img/img_1.png" />
                 </div>
                 <div class="box-left">    
-                    <a href="#" class="logo" title="">
-                        logo
+                    <a href="#" class="logo" title="Just Agency">
+                        <img src="/img/logo.png" />
                     </a>
                     <nav>
                         <a onclick="scrollBlock('wr-how-we-work')">Как мы работаем</a>
                         <a onclick="scrollBlock('wr-portfolio')">Портфолио</a>
                         <a onclick="scrollBlock('wr-contact-info')">Контакты</a>
                     </nav>  
-                    <a href="tel:0000000000" class="phone">
-                        +7 (920) 000-00-00
+                    <a href="tel:+79990993884" class="phone">
+                        +7 (999) 099-38-84
                     </a>    
                     <ul>
                         <li>
@@ -92,7 +158,7 @@
                     <section class="box-center">    
                         <div id="screen-dev-slider" class="wr-slider">
                             
-                            <div class="item" style="z-index: 2;">
+                            <div class="item">
                                 <h3>Визитка</h3>
                                 <div class="back-block"></div>  
                                 <ul >
@@ -109,7 +175,7 @@
                                 <botton>Заказать сайт</botton> 
                             </div>
 
-                            <div class="item" style="z-index: 1;margin-top: -532px;margin-left: 60px;background-color: #F9E9E3;">
+                            <div class="item">
                                 <h3>Визитка</h3>
                                 <div class="back-block"></div>  
                                 <ul >
@@ -131,14 +197,14 @@
                         </div>    
                     </section>            
                     <section class="box-left mobile-hidden">    
-                        <div class="wr-desktop-count-slide">
+                        <div id="desktop-count-slide-item" class="wr-desktop-count-slide">
                             <div class="item active"></div>
                             <div class="item"></div>
                             <div class="item"></div>
                             <div class="item"></div>
                             <div class="item"></div>                        
                         </div>   
-                        <div class="slider-control">
+                        <div id="desktop-slider-control" class="slider-control">
                             <div class="left">
                                 <i class="fa fa-angle-left" aria-hidden="true"></i>
                             </div>
@@ -541,7 +607,7 @@
                             <option value="Разработка ПО">Разработка ПО</option>
                             <option value="Оптимизация">Оптимизация</option>
                         </select>
-                        <botton>Отправить</botton> 
+                        <botton>Отправить</botton>
                     </div>            
                 </section>
                 <section class="wr-contact-info">
@@ -549,27 +615,27 @@
                     <div>
                         <p>
                             <i class="fa fa-address-book" aria-hidden="true"></i>
-                            info@test.ru                        
+                            manager@just-agency.ru                 
                         </p>
                     </div>
                     <div>
                         <p>
                             <i class="fa fa-address-book" aria-hidden="true"></i>
-                            8 (900) 111-11-11 
+                            +7 (999) 099-38-84
                         </p>
                     </div>
                     <div>
                         <p>
                             <i class="fa fa-address-book" aria-hidden="true"></i>
-                            8 (900) 111-11-11 
+                            +7 (999) 099-38-84 
                         </p>
                         <p>
                             <i class="fa fa-address-book" aria-hidden="true"></i>
-                            8 (900) 111-11-11                         
+                            +7 (999) 099-38-84                         
                         </p>
                         <p>
                             <i class="fa fa-address-book" aria-hidden="true"></i>
-                            8 (900) 111-11-11                         
+                            +7 (999) 099-38-84                         
                         </p>                    
                     </div>
                 </section>
@@ -579,7 +645,7 @@
             <section class="container">
                 <footer>
                     <div>
-                        <img src="/img/" />
+                        <img src="/img/logo_footer.png" />
                     </div>
                     <div>
                         <p>Услуги</p>
@@ -608,14 +674,36 @@
                     </div>
                     <div>
                         <p>Контакты</p>
-                        <a href="tel:800000000" class="link">88081984848</a>
-                        <a href="mailto:info@test.bk?subject=Обратная связь с сайта" class="link">info@test.bk</a>
-                        <a href="http://t.me/Ksunius" class="link">Телеграм</a>
-                        <a href="https://api.whatsapp.com/send/?phone=+79268921585" target="_blank" class="link">Ватсап</a>
+                        <a href="tel:+79990993884" class="link">+7 (999) 099-38-84</a>
+                        <a href="mailto:manager@just-agency.ru?subject=Обратная связь с сайта" class="link">manager@just-agency.ru</a>
+                        <a href="http://t.me/telvla" class="link">Телеграм</a>
+                        <a href="https://api.whatsapp.com/send/?phone=+79046036365" target="_blank" class="link">Ватсап</a>
                     </div>
                 </footer>
             </section>
         </section>
+        <noindex>
+            <div class="wr-btn-up">
+                <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+            </div>
+            <div class="wr-form">
+                <div class="form-center">
+                    <div class="box">
+                        <div class="form-close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+                        <p class="title">Ваши контакты</p>
+                        <input type="text" name="name" id="form-name" placeholder="Ваше имя*" />
+                        <input type="text" name="email" id="form-phone" placeholder="+7 (900) 000-00-00" />
+                        <input type="text" name="email" id="form-email" placeholder="E-mail*" />
+                        <input type="text" name="phone" id="form-file" placeholder="Файл ТЗ" />
+                        <input type="text" name="email" id="form-comment" placeholder="Комментарий к проекту" />
+                        <p class="info">Нажав на кнопуку, вы соглашаетесь но обработку <a href="">персональных данных</a></p>
+                        <botton>Отправить</botton>
+                    </div>
+                </div>
+            </div>        
+        </noindex>
 
         <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>        
