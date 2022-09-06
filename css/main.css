@@ -982,10 +982,22 @@ footer div .link:hover {
     -moz-box-shadow: 6px 7px 2px 0px rgba(49, 49, 49, 0.8);
     box-shadow: 4px 6px 2px 0px rgba(49, 49, 49, 0.8);
     cursor: pointer;
-  }
+}
 
-
-
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+.swipe-wrap {
+        overflow: hidden;
+        position: relative;
+}
+.swipe-wrap > div {
+        float: left;
+        width: 100%;
+        position: relative;
+}
 
 
 @media(max-width: 1400px) {

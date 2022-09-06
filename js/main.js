@@ -35,32 +35,32 @@ function closeMobileMenu() {
 
 btn_top_order_project = document.getElementsByClassName('box-left')[0].getElementsByTagName('botton')[0];
 btn_top_order_project.addEventListener('click', () => {
-
-    alert('Заказать проект');
+    scrollBlock('wr-feedback');
+    //alert('Заказать проект');
 });
 
 btn_dev_slider = document.getElementById('screen-dev-slider').getElementsByTagName('botton')[0];
 btn_dev_slider.addEventListener('click', () => {
-
-    alert('Заказать сайт');
+    scrollBlock('wr-feedback');
+    //alert('Заказать сайт');
 });
 
 btn_stages_work = document.getElementsByClassName('wr-stages-work')[0].getElementsByTagName('botton')[0];
 btn_stages_work.addEventListener('click', () => {
-
-    alert('Заказать чат-бот');
+    scrollBlock('wr-feedback');
+    //alert('Заказать чат-бот');
 });
 
 btn_stages_work = document.getElementsByClassName('wr-stages-work')[1].getElementsByTagName('botton')[0];
 btn_stages_work.addEventListener('click', () => {
-
-    alert('Заказать разработку');
+    scrollBlock('wr-feedback');
+    //alert('Заказать разработку');
 });
 
 btn_project_optimization = document.getElementsByClassName('wr-project-optimization')[0].getElementsByTagName('botton')[0];
 btn_project_optimization.addEventListener('click', () => {
-
-    alert('Заказать услугу');
+    scrollBlock('wr-feedback');
+    //alert('Заказать услугу');
 });
 
 btn_feedback = document.getElementsByClassName('wr-feedback')[0].getElementsByTagName('botton')[0];
@@ -161,8 +161,36 @@ function showerCounterStreakDesktop() {
     box_streak.innerHTML = item;
 
     first_streak = document.getElementById('desktop-count-slide-item').getElementsByTagName('div')[0];  
-    first_streak.setAttribute( 'class', 'item active' );
+    first_streak.setAttribute('class', 'item active');
 }
+
+var elementO = document.getElementById('mySwipe'),
+    prevBtnO = document.getElementById('prev'),
+    nextBtnO = document.getElementById('next');
+    window.mySwipeO = new Swipe(elementO, {
+    startSlide: 0,
+    auto: false,
+    draggable: true,
+    autoRestart: false,
+    continuous: false,
+    disableScroll: false,
+    stopPropagation: false,
+    callback: function(index, elementO) {
+    },
+    transitionEnd: function(index, elementO) {
+        mobile_count_slide = document.getElementById('mobile-count-slide-item').getElementsByTagName('div');
+        count_slide = mobile_count_slide.length;
+
+        for (i = 0; i < count_slide; i++) {
+            item_slide = document.getElementById('mobile-count-slide-item').getElementsByTagName('div')[i];
+            if (i != index) {
+                item_slide.setAttribute('class', 'item');    
+            } else {
+                item_slide.setAttribute('class', 'item active');
+            }
+        }
+    }
+});
 
 
 /*
