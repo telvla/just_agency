@@ -39,28 +39,53 @@ btn_top_order_project.addEventListener('click', () => {
     //alert('Заказать проект');
 });
 
+function btnToOrderSite(title) {
+    type_site = document.getElementById('type-site');
+    type_site.value = 'Вид сайта: ' + title;
+    type_site.style.display = 'block';
+    document.getElementById("select-type-service").value = 'Сайты';
+
+    scrollBlock('wr-feedback');
+}
+
+function selectTypeService() {
+    select_val = document.getElementById("select-type-service").value;
+    type_site = document.getElementById('type-site');
+    
+    type_site.style.display = 'none';
+
+    if (select_val == 'Сайты' && !isEmpty(this.value)) {
+        type_site.style.display = 'block';        
+    }
+}
+
+/*
 btn_dev_slider = document.getElementById('screen-dev-slider').getElementsByTagName('botton')[0];
 btn_dev_slider.addEventListener('click', () => {
     scrollBlock('wr-feedback');
     //alert('Заказать сайт');
 });
+*/
 
+//btn - Заказать чат-бот
 btn_stages_work = document.getElementsByClassName('wr-stages-work')[0].getElementsByTagName('botton')[0];
 btn_stages_work.addEventListener('click', () => {
+    document.getElementById("select-type-service").value = 'Чат-боты';
     scrollBlock('wr-feedback');
-    //alert('Заказать чат-бот');
 });
 
+//btn - Разработка ПО
 btn_stages_work = document.getElementsByClassName('wr-stages-work')[1].getElementsByTagName('botton')[0];
 btn_stages_work.addEventListener('click', () => {
+    document.getElementById("select-type-service").value = 'Разработка ПО';
     scrollBlock('wr-feedback');
-    //alert('Заказать разработку');
 });
 
+// btn - Оптимизация
 btn_project_optimization = document.getElementsByClassName('wr-project-optimization')[0].getElementsByTagName('botton')[0];
 btn_project_optimization.addEventListener('click', () => {
+    document.getElementById("select-type-service").value = 'Оптимизация';
     scrollBlock('wr-feedback');
-    //alert('Заказать услугу');
 });
 
 btn_feedback = document.getElementsByClassName('wr-feedback')[0].getElementsByTagName('botton')[0];
@@ -74,14 +99,9 @@ btn_close_form.addEventListener('click', () => {
     $('.wr-form').css('display', 'none');
 });
 
-
-
-
 btn_left_desktop_slider_control = document.getElementById('desktop-slider-control').getElementsByClassName('left')[0];
 btn_left_desktop_slider_control.addEventListener('click', () => {
-
     //top_count_slide
-
     item_current = document.getElementById('screen-dev-slider').getElementsByTagName('div')[0];  
 
     $(item_current).animate({
@@ -183,6 +203,34 @@ var elementO = document.getElementById('mySwipe'),
 
         for (i = 0; i < count_slide; i++) {
             item_slide = document.getElementById('mobile-count-slide-item').getElementsByTagName('div')[i];
+            if (i != index) {
+                item_slide.setAttribute('class', 'item');    
+            } else {
+                item_slide.setAttribute('class', 'item active');
+            }
+        }
+    }
+});
+
+var elementO = document.getElementById('mySwipe-2'),
+    prevBtnO = document.getElementById('prev'),
+    nextBtnO = document.getElementById('next');
+    window.mySwipeO = new Swipe(elementO, {
+    startSlide: 0,
+    auto: false,
+    draggable: true,
+    autoRestart: false,
+    continuous: false,
+    disableScroll: false,
+    stopPropagation: false,
+    callback: function(index, elementO) {
+    },
+    transitionEnd: function(index, elementO) {
+        mobile_count_slide = document.getElementById('mobile-count-portfolio-item').getElementsByTagName('div');
+        count_slide = mobile_count_slide.length;
+
+        for (i = 0; i < count_slide; i++) {
+            item_slide = document.getElementById('mobile-count-portfolio-item').getElementsByTagName('div')[i];
             if (i != index) {
                 item_slide.setAttribute('class', 'item');    
             } else {
