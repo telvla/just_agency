@@ -1552,6 +1552,11 @@ footer div .link:hover {
         line-height: 50px;
     }    
 
+    .wr-software-development-title .right span:nth-child(4) {
+        display: block;
+        margin: 0px 0px 0px 20px;
+    }
+
     .wr-chat-bot-info div {
         margin: 0px 0px 0px 0px;
     }    
