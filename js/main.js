@@ -184,11 +184,11 @@ function showerCounterStreakDesktop() {
     first_streak.setAttribute('class', 'item active');
 }
 
-elementO = document.getElementById('mySwipe');
+element = document.getElementById('mySwipe');
 prevBtn = document.getElementById('prev'),
 nextBtn = document.getElementById('next');
     
-window.mySwipe = new Swipe(elementO, {
+window.mySwipe = new Swipe(element, {
     startSlide: 0,
     auto: false,
     draggable: true,
@@ -196,9 +196,21 @@ window.mySwipe = new Swipe(elementO, {
     continuous: false,
     disableScroll: false,
     stopPropagation: false,
-    callback: function(index, elementO) {
+    callback: function(index, element) {
     },
-    transitionEnd: function(index, elementO) {
+    transitionEnd: function(index, element) {
+        mobile_count_slide = document.getElementById('desktop-count-slide-item').getElementsByTagName('div');
+        count_slide = mobile_count_slide.length;
+
+        for (i = 0; i < count_slide; i++) {
+            item_slide = document.getElementById('desktop-count-slide-item').getElementsByTagName('div')[i];
+            if (i != index) {
+                item_slide.setAttribute('class', 'item');    
+            } else {
+                item_slide.setAttribute('class', 'item active');
+            }
+        }
+
         mobile_count_slide = document.getElementById('mobile-count-slide-item').getElementsByTagName('div');
         count_slide = mobile_count_slide.length;
 
