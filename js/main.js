@@ -98,7 +98,7 @@ btn_close_form = document.getElementsByClassName('form-close')[0];
 btn_close_form.addEventListener('click', () => {
     $('.wr-form').css('display', 'none');
 });
-
+/*
 btn_left_desktop_slider_control = document.getElementById('desktop-slider-control').getElementsByClassName('left')[0];
 btn_left_desktop_slider_control.addEventListener('click', () => {
     //top_count_slide
@@ -131,7 +131,7 @@ btn_right_desktop_slider_control.addEventListener('click', () => {
 
     console.log('право');
 });
-
+*/
 btn_up = document.getElementsByClassName('wr-btn-up')[0];
 btn_up.addEventListener('click', () => {
     let destination = $('body').offset().top - 20;
@@ -184,10 +184,11 @@ function showerCounterStreakDesktop() {
     first_streak.setAttribute('class', 'item active');
 }
 
-var elementO = document.getElementById('mySwipe'),
-    prevBtnO = document.getElementById('prev'),
-    nextBtnO = document.getElementById('next');
-    window.mySwipeO = new Swipe(elementO, {
+elementO = document.getElementById('mySwipe');
+prevBtn = document.getElementById('prev'),
+nextBtn = document.getElementById('next');
+    
+window.mySwipe = new Swipe(elementO, {
     startSlide: 0,
     auto: false,
     draggable: true,
@@ -211,6 +212,9 @@ var elementO = document.getElementById('mySwipe'),
         }
     }
 });
+
+prevBtn.onclick = mySwipe.prev;
+nextBtn.onclick = mySwipe.next;
 
 var elementO = document.getElementById('mySwipe-2'),
     prevBtnO = document.getElementById('prev'),
@@ -239,8 +243,3 @@ var elementO = document.getElementById('mySwipe-2'),
         }
     }
 });
-
-
-/*
-https://codepen.io/leusrox/pen/RgJKJx
-*/
