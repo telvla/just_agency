@@ -457,7 +457,7 @@ header .box-left botton:hover {
 
 .wr-stages-work .left img {
     width: 99%;
-    margin: -40px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
 }
 
 .wr-stages-work .right {
@@ -711,7 +711,7 @@ header .box-left botton:hover {
 
 .wr-feedback .left {
     float: left;
-    width: 60%;
+    width: 50%;
 }
 
 .wr-feedback .left img {
@@ -720,8 +720,8 @@ header .box-left botton:hover {
 
 .wr-feedback .right {
     float: left;
-    width: 40%;
-    padding: 7% 0px 0px 0px;
+    width: 49%;
+    padding: 2% 0px 0px 0px;
 }
 
 .wr-feedback .right h2 {
