@@ -393,19 +393,19 @@ header .box-left botton:hover {
 }
 
 .wr-chat-bot-info .line-vertically {
-    border-left: dashed 1px #721920;
+    border-left: dashed 1px #dfdfdf;
     width: 1px;
     height: 200px;
     float: left;
 }
 
 .wr-chat-bot-info .line {
-    border-top: dashed 1px #721920;
+    border-top: dashed 1px #dfdfdf;
     width: 100%;
 }
 
 .wr-chat-bot-info .mobile-line {
-    border-top: dashed 1px #721920;
+    border-top: dashed 1px #dfdfdf;
     width: 100%;
     display: none;
 }
@@ -817,7 +817,7 @@ footer div p {
 }
 
 footer div img {
-    width: 25%;
+    width: 40%;
 }
 
 footer ul li {

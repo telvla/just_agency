@@ -93,11 +93,12 @@ btn_feedback.addEventListener('click', () => {
 
     alert('Отправить');
 });
-
+/*
 btn_close_form = document.getElementsByClassName('form-close')[0];
 btn_close_form.addEventListener('click', () => {
     $('.wr-form').css('display', 'none');
 });
+*/
 /*
 btn_left_desktop_slider_control = document.getElementById('desktop-slider-control').getElementsByClassName('left')[0];
 btn_left_desktop_slider_control.addEventListener('click', () => {
