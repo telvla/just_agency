@@ -4,6 +4,12 @@
     url(/fonts/MontRegular.ttf);
 }
 
+@font-face {
+    font-family: MontBolt; 
+    src: local("MontBolt"),
+    url(/fonts/MontBold.ttf);
+}
+
 body {
     font-family: 'MontRegular';
     margin: 0px;
@@ -237,8 +243,8 @@ header .box-left botton:hover {
 }
 
 .wr-slider .item {    
-    border: solid 1px #313131;
-    width: 87%;
+    border: solid 2px #313131;
+    width: 86%;
     margin: 0px 0px 0px 50px;
     background: #fff;
     position: relative;
@@ -420,7 +426,7 @@ header .box-left botton:hover {
 .wr-chat-bot-info div .title {
     font-size: 24px;
     line-height: 31px;
-    font-weight: bold;
+    font-family: 'MontBolt';
     color: #313131;
 }
 
@@ -428,7 +434,7 @@ header .box-left botton:hover {
     padding: 0px 0px 0px 40px;
     font-size: 24px;
     line-height: 31px;
-    font-weight: bold;
+    font-family: 'MontBolt';
     color: #313131;    
 }
 
