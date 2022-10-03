@@ -3,10 +3,12 @@ $(document).ready(() => {
 
     heightScreenDevelopmentSlider();
     showerCounterStreakDesktop();
+    setWidthSelectForm();
 });
 
 $(window).resize(() => {
     heightScreenDevelopmentSlider();
+    setWidthSelectForm();
 });
 
 $(document).scroll(() => {
@@ -164,8 +166,13 @@ function scrollBlock(wr_block) {
     $("html").animate({scrollTop: destination}, 2100);
 }
 
+function setWidthSelectForm() {
+    let width_input_form = document.getElementById('name').offsetWidth;
+    $("#select-type-service").css('width', width_input_form);
+}
+
 function heightScreenDevelopmentSlider() {
-    let height_screen_development_slider = document.getElementById('screen-dev-slider').offsetHeight
+    let height_screen_development_slider = document.getElementById('screen-dev-slider').offsetHeight;
     $(".wr-website-development-slider .box-left").css('margin-top', Number(height_screen_development_slider) - 60);
 }
 
