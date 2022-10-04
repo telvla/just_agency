@@ -110,18 +110,18 @@ header .box-left botton {
     border: solid 2px #313131;
     text-align: center;
     padding: 15px 0px 15px 0px;
-    -webkit-box-shadow: 6px 7px 2px 0px rgba(49, 49, 49, 0.8);
-    -moz-box-shadow: 6px 7px 2px 0px rgba(49, 49, 49, 0.8);
-    box-shadow: 4px 6px 2px 0px rgba(49, 49, 49, 0.8);        
+    -webkit-box-shadow: 6px 7px 2px 0px rgba(49, 49, 49, 1);
+    -moz-box-shadow: 6px 7px 2px 0px rgba(49, 49, 49, 1);
+    box-shadow: 4px 6px 2px 0px rgba(49, 49, 49, 1);        
     cursor: pointer;
 }
 
 header .box-left botton:hover {
     color: #ff7953;
     border: solid 2px #ff7953;
-    -webkit-box-shadow: 6px 7px 2px 0px rgba(255, 121, 83, 0.8);
-    -moz-box-shadow: 6px 7px 2px 0px rgba(255, 121, 83, 0.8);
-    box-shadow: 4px 6px 2px 0px rgba(255, 121, 83, 0.8);        
+    -webkit-box-shadow: 6px 7px 2px 0px rgba(255, 121, 83, 1);
+    -moz-box-shadow: 6px 7px 2px 0px rgba(255, 121, 83, 1);
+    box-shadow: 4px 6px 2px 0px rgba(255, 121, 83, 1);        
 }
 
 #wr-mobile-menu {
@@ -663,18 +663,18 @@ header .box-left botton:hover {
     line-height: 31px;
     text-align: center;
     padding: 15px 0px 15px 0px;
-    -webkit-box-shadow: 6px 7px 2px 0px rgba(0, 0, 0, 0.8);
-    -moz-box-shadow: 6px 7px 2px 0px rgba(0, 0, 0, 0.8);
-    box-shadow: 4px 6px 2px 0px rgba(0, 0, 0, 0.8);       
+    -webkit-box-shadow: 6px 7px 2px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 6px 7px 2px 0px rgba(0, 0, 0, 1);
+    box-shadow: 4px 6px 2px 0px rgba(0, 0, 0, 1);       
     cursor: pointer; 
 }
 
 .wr-project-optimization botton:hover {
     color: #ff7953;
     border: solid 2px #ff7953;
-    -webkit-box-shadow: 6px 7px 2px 0px rgba(255, 121, 83, 0.8);
-    -moz-box-shadow: 6px 7px 2px 0px rgba(255, 121, 83, 0.8);
-    box-shadow: 4px 6px 2px 0px rgba(255, 121, 83, 0.8);        
+    -webkit-box-shadow: 6px 7px 2px 0px rgba(255, 121, 83, 1);
+    -moz-box-shadow: 6px 7px 2px 0px rgba(255, 121, 83, 1);
+    box-shadow: 4px 6px 2px 0px rgba(255, 121, 83, 1);        
 }
 
 .wr-project-optimization botton::after {
@@ -767,18 +767,18 @@ header .box-left botton:hover {
     border: solid 2px #313131;
     text-align: center;
     padding: 9px 0px 9px 0px;
-    -webkit-box-shadow: 6px 7px 2px 0px rgba(0, 0, 0, 0.8);
-    -moz-box-shadow: 6px 7px 2px 0px rgba(0, 0, 0, 0.8);
-    box-shadow: 4px 6px 2px 0px rgba(0, 0, 0, 0.8);    
+    -webkit-box-shadow: 6px 7px 2px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 6px 7px 2px 0px rgba(0, 0, 0, 1);
+    box-shadow: 4px 6px 2px 0px rgba(0, 0, 0, 1);    
     cursor: pointer;  
 }
 
 .wr-feedback .right botton:hover {
     color: #ff7953;
     border: solid 2px #ff7953;
-    -webkit-box-shadow: 6px 7px 2px 0px rgba(255, 121, 83, 0.8);
-    -moz-box-shadow: 6px 7px 2px 0px rgba(255, 121, 83, 0.8);
-    box-shadow: 4px 6px 2px 0px rgba(255, 121, 83, 0.8);        
+    -webkit-box-shadow: 6px 7px 2px 0px rgba(255, 121, 83, 1);
+    -moz-box-shadow: 6px 7px 2px 0px rgba(255, 121, 83, 1);
+    box-shadow: 4px 6px 2px 0px rgba(255, 121, 83, 1);        
 }
 
 .wr-contact-info {
@@ -982,9 +982,9 @@ footer div .link:hover {
     border: solid 2px #313131;
     text-align: center;
     padding: 10px 0px 10px 0px;
-    -webkit-box-shadow: 6px 7px 2px 0px rgba(49, 49, 49, 0.8);
-    -moz-box-shadow: 6px 7px 2px 0px rgba(49, 49, 49, 0.8);
-    box-shadow: 4px 6px 2px 0px rgba(49, 49, 49, 0.8);
+    -webkit-box-shadow: 6px 7px 2px 0px rgba(49, 49, 49, 1);
+    -moz-box-shadow: 6px 7px 2px 0px rgba(49, 49, 49, 1);
+    box-shadow: 4px 6px 2px 0px rgba(49, 49, 49, 1);
     cursor: pointer;
 }
 
