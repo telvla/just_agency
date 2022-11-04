@@ -188,9 +188,17 @@ function showerCounterStreakDesktop() {
     box_streak = document.getElementById('desktop-count-slide-item');
     box_streak.innerHTML = item;
 
-    first_streak = document.getElementById('desktop-count-slide-item').getElementsByTagName('div')[0];  
+    first_streak = document.getElementById('desktop-count-slide-item').getElementsByTagName('div')[0];
     first_streak.setAttribute('class', 'item active');
 }
+
+function showerGallery(img) {
+    box_gallery = document.getElementById('gallery');
+    big_img = box_gallery.getElementsByTagName('img')[0];
+    big_img.setAttribute("src", '/img/portfolio/gallery/' + img + '.jpg');
+    $('#gallery').css('display', 'block');
+}
+
 
 element = document.getElementById('mySwipe');
 prevBtn = document.getElementById('prev'),

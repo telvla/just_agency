@@ -1010,6 +1010,21 @@ footer div .link:hover {
     display: none;
 }
 
+#gallery {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 888888;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    pointer-events: auto;
+    background-color: rgba(127, 239, 165, 0.75);
+    display: none;
+} 
+
 @media(max-width: 1400px) {
     .container {
         width: 1170px;
