@@ -200,6 +200,18 @@ function showerGallery(img) {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 element = document.getElementById('mySwipe');
 prevBtn = document.getElementById('prev'),
 nextBtn = document.getElementById('next');

@@ -1023,7 +1023,16 @@ footer div .link:hover {
     pointer-events: auto;
     background-color: rgba(127, 239, 165, 0.75);
     display: none;
-} 
+}
+
+#gallery div {
+    position: fixed;
+    width: 50px;
+    height: 32px;
+    background: #fff;
+    right: 0px;
+    padding: 14px;
+}
 
 @media(max-width: 1400px) {
     .container {
