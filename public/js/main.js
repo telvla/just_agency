@@ -93,8 +93,28 @@ btn_project_optimization.addEventListener('click', () => {
 btn_feedback = document.getElementsByClassName('wr-feedback')[0].getElementsByTagName('botton')[0];
 btn_feedback.addEventListener('click', () => {
 
+    axios.post('send-message', {
+        id: '',
+        mail: '',
+        name: '',
+        city: ''
+    })
+    .then(function (response) {
+        if (response.data == 200) {
+
+        }
+        
+        console.log(response.data);
+    })
+    .catch(function (error) {
+    });
+
+
+
+
     alert('Отправить');
 });
+
 /*
 btn_close_form = document.getElementsByClassName('form-close')[0];
 btn_close_form.addEventListener('click', () => {
