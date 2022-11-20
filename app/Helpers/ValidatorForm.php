@@ -12,17 +12,17 @@ use Validator;
 class ValidatorForm
 {
     /**
-     * Проверка формы обратной связи с лендинга на валидность
+     * Проверка формы обратной связи на валидность
      * @param Request $request - массив данных пользователя
      * @return bool
      */
-    public static function landingPage(Request $request)
+    public static function check(Request $request) : bool
     {
         return Validator::make($request->all(), [
-            'name' => 'required|string|max:50',
-            'mail' => 'required|email|max:40',
-            'phone' => 'required|string|max:30',
-            'text' => 'required|string|max:600',
+            'name' => 'required|string|max:60',
+            'email' => 'required|email|max:50',
+            'phone' => 'required|string|max:20',
+            'type_service' => 'string|max:20'
         ]);
     }
 }
