@@ -12,10 +12,10 @@ use Validator;
 class ValidatorForm
 {
     /**
-     * Проверка формы обратной связи на валидность
-     * @param Request $request - массив данных пользователя
-     * @return bool
-     */
+    * Проверка формы обратной связи на валидность
+    * @param Request $request - массив данных пользователя
+    * @return bool
+    */
     public static function check(Request $request) : bool
     {
         return Validator::make($request->all(), [
