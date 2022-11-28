@@ -21,6 +21,11 @@ class PageController extends Controller {
 
     public function send(Request $request) : string
     {
+        // проверяем валидность
+        // записываем данные в бд
+        // отправляем сообщение менеджеру
+        // отправляем сообщение пользователю
+        // если не отплавили или валидность не прошла, пишем в лог
 
         return 'send';
     }

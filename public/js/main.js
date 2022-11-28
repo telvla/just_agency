@@ -94,10 +94,10 @@ btn_feedback = document.getElementsByClassName('wr-feedback')[0].getElementsByTa
 btn_feedback.addEventListener('click', () => {
 
     axios.post('send-message', {
-        id: '',
-        mail: '',
         name: '',
-        city: ''
+        email: '',
+        phone: '',
+        type_service: ''
     })
     .then(function (response) {
         if (response.data == 200) {

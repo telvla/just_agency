@@ -1590,7 +1590,8 @@ footer div .link:hover {
     }
     
     .wr-chat-bot-info div h3 {
-        font-size: 22px;
+        font-size: 16px;
+        margin: -20px 0px 0px 0px;
     }
     
     .wr-chat-bot-info div .title {
