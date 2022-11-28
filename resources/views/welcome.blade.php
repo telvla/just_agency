@@ -540,7 +540,7 @@
                 </section>                       
                 <section class="wr-stages-work">
                     <div class="left">
-                        <img src="/img/stages_work.png" style="margin: -100px 0px 0px 0px;" />
+                        <img src="/img/stages_work.png" />
                     </div>    
                     <div class="right">
                         <div class="wr-slider">
