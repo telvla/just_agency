@@ -26,7 +26,7 @@ class SenderMessage
             'name' => $this->request->name,
             'email' => $this->request->mail,
             'phone' => $this->request->phone,
-            'type_service' => $this->request->text
+            'type_service' => $this->request->type_service
         ], function ($message) {
             $message->from('no-reply@bioline.ru', 'bioline.ru');
             $message->to('trifonov@bioline.ru', 'bioline.ru')->subject('Заявка с сайта');
