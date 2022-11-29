@@ -21,6 +21,8 @@ class PageController extends Controller {
 
     public function send(Request $request) : string
     {
+        
+
         // проверяем валидность
         // записываем данные в бд
         // отправляем сообщение менеджеру
