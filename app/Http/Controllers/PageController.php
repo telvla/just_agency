@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App;
 use Illuminate\Http\Request;
 use App\Helpers\ValidatorForm;
+use App\Service;
+
 
 /**
  * Description of PageController
@@ -21,14 +23,7 @@ class PageController extends Controller {
 
     public function send(Request $request) : string
     {
-        
 
-        // проверяем валидность
-        // записываем данные в бд
-        // отправляем сообщение менеджеру
-        // отправляем сообщение пользователю
-        // если не отплавили или валидность не прошла, пишем в лог
-
-        return 'send';
+        return new FeedBackService->boot($request);
     }
 }
