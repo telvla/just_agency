@@ -4,26 +4,25 @@ namespace App\Http\Controllers;
 
 use App;
 use Illuminate\Http\Request;
-use App\Helpers\ValidatorForm;
-use App\Service;
-
+use App\Service\FeedBackService;
 
 /**
  * Description of PageController
  *
  * @author trifonov
  */
-class PageController extends Controller {
-
+class PageController extends Controller 
+{
     public function index() : object
     {
         
         return view('welcome');
     }
 
-    public function send(Request $request) : string
+    public function send(Request $request) //: string
     {
+        $service = new FeedBackService();
 
-        return new FeedBackService->boot($request);
+        return $service->boot($request);
     }
 }

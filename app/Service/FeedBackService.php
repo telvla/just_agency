@@ -2,6 +2,8 @@
 
 namespace App\Service;
 use Illuminate\Http\Request;
+use App\Helpers\SenderMessage;
+use App\Models\FeedbackModel;
 
 /**
  * Description of FeedBackService
@@ -17,11 +19,11 @@ class FeedBackService
     */
     public function boot(Request $request)
     {
-        //\App\Models\FeedbackModel::insert($request);
         // проверяем валидность
-        // записываем данные в бд
-        // отправляем сообщение менеджеру
-        // отправляем сообщение пользователю
+        
+        FeedbackModel::insert($request); // записываем данные в бд
+        new SenderMessage($request); // отправляем сообщение пользователю // отправляем сообщение менеджеру
+
         // если не отплавили или валидность не прошла, пишем в лог
     }
 }

@@ -2,7 +2,7 @@
 
 namespace App\Helpers;
 use Illuminate\Http\Request;
-use Validator;
+use Mail;
 
 /**
  * Description of SenderMessage
@@ -23,20 +23,21 @@ class SenderMessage
     public function sendManager()
     {
         Mail::send('manager', [
-            'name' => $request->name,
-            'mail' => $request->mail,
-            'phone' => $request->phone,
-            'text' => $request->text
-
-            
+            'name' => $this->request->name,
+            'email' => $this->request->mail,
+            'phone' => $this->request->phone,
+            'type_service' => $this->request->text
         ], function ($message) {
             $message->from('no-reply@bioline.ru', 'bioline.ru');
-            $message->to('trifonov@bioline.ru', 'bioline.ru')->subject('Обратная связь');
+            $message->to('trifonov@bioline.ru', 'bioline.ru')->subject('Заявка с сайта');
         });
     }
 
     public function sendClient()
     {
-
+        Mail::send('client', [], function ($message) {
+            $message->from('no-reply@bioline.ru', 'bioline.ru');
+            $message->to('trifonov@bioline.ru', 'bioline.ru')->subject('Заявка на сайте');
+        });
     }
 }
