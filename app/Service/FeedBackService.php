@@ -14,17 +14,20 @@ use App\Helpers\ValidatorForm;
 class FeedBackService
 {
     /**
-    * Проверка формы обратной связи на валидность
-    * @param Request $request - массив данных пользователя
+    * Boot service
+    * @param Request $request - user data array
     * @return bool
     */
-    public function boot(Request $request)
+    public function boot(Request $request) : bool
     {
         if (ValidatorForm::check($request)) {
-            FeedbackModel::insert($request); // записываем данные в бд
-            $message = new SenderMessage($request); // отправляем сообщение пользователю // отправляем сообщение менеджеру
+            FeedbackModel::insert($request);
+            $message = new SenderMessage($request);
             $message->send();
-            // если не отплавили или валидность не прошла, пишем в лог
+
+            return true;
         }
+
+        return false;
     }
 }
