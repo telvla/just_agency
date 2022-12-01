@@ -90,14 +90,16 @@ btn_project_optimization.addEventListener('click', () => {
     scrollBlock('wr-feedback');
 });
 
+
+
 btn_feedback = document.getElementsByClassName('wr-feedback')[0].getElementsByTagName('botton')[0];
 btn_feedback.addEventListener('click', () => {
 
     axios.post('send-message', {
-        name: '',
-        email: '',
-        phone: '',
-        type_service: ''
+        name: 'Артем',
+        email: 'test@bk.ru',
+        phone: '+79210001256',
+        type_service: 'Создание ин.-магазина'
     })
     .then(function (response) {
         if (response.data == 200) {
@@ -114,6 +116,8 @@ btn_feedback.addEventListener('click', () => {
 
     alert('Отправить');
 });
+
+
 
 /*
 btn_close_form = document.getElementsByClassName('form-close')[0];

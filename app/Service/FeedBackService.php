@@ -13,13 +13,23 @@ use App\Helpers\ValidatorForm;
  */
 class FeedBackService
 {
+    private $request;
+
+    public function __construct(Request $request)
+    {
+        $this->request = $request;
+    }
+
     /**
     * Boot service
     * @param Request $request - user data array
     * @return bool
     */
-    public function boot(Request $request) : bool
+    public function boot() //: bool
     {
+        var_dump($this->request);
+
+        /*
         if (ValidatorForm::check($request)) {
             FeedbackModel::insert($request);
             $message = new SenderMessage($request);
@@ -29,5 +39,6 @@ class FeedBackService
         }
 
         return false;
+        */
     }
 }

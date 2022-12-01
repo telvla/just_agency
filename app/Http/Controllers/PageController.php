@@ -28,10 +28,10 @@ class PageController extends Controller
     * @param Request $request - user data array
     * @return bool
     */
-    public function send(Request $request) : bool
+    public function send(Request $request) //: bool
     {
-        $service = new FeedBackService();
+        $service = new FeedBackService($request);
 
-        return $service->boot($request);
+        return $service->boot();
     }
 }
