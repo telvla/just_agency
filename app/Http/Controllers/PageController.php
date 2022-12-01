@@ -13,13 +13,22 @@ use App\Service\FeedBackService;
  */
 class PageController extends Controller 
 {
+    /**
+    * Shower index page
+    * @return object
+    */    
     public function index() : object
     {
         
         return view('welcome');
     }
 
-    public function send(Request $request) //: string
+    /**
+    * Send feedback
+    * @param Request $request - user data array
+    * @return bool
+    */
+    public function send(Request $request) : bool
     {
         $service = new FeedBackService();
 
