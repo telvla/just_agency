@@ -12,8 +12,8 @@ use Validator;
 class ValidatorForm
 {
     /**
-    * Проверка формы обратной связи на валидность
-    * @param Request $request - массив данных пользователя
+    * Checking the feedback form
+    * @param Request $request - user data array
     * @return bool
     */
     public static function check(Request $request) : bool
