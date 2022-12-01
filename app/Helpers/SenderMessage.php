@@ -11,6 +11,9 @@ use Mail;
  */
 class SenderMessage
 {
+    /*
+    * user data array
+    */
     private $request;
 
     public function __construct(Request $request)
@@ -24,7 +27,11 @@ class SenderMessage
         $this->client();
     } 
 
-    public function manager()
+    /**
+    * Send message manager
+    * @return void
+    */
+    public function manager() : void
     {
         Mail::send('manager', [
             'name' => $this->request->name,
@@ -33,15 +40,19 @@ class SenderMessage
             'type_service' => $this->request->type_service
         ], function ($message) {
             $message->from('no-reply@bioline.ru', 'bioline.ru');
-            $message->to('trifonov@bioline.ru', 'bioline.ru')->subject('Заявка с сайта');
+            $message->to('trifonov@bioline.ru', 'bioline.ru')->subject('Заявка с сайта Just Agency');
         });
     }
 
-    public function client()
+    /**
+    * Send message client
+    * @return void
+    */    
+    public function client() : void
     {
         Mail::send('client', [], function ($message) {
             $message->from('no-reply@bioline.ru', 'bioline.ru');
-            $message->to('trifonov@bioline.ru', 'bioline.ru')->subject('Заявка на сайте');
+            $message->to('trifonov@bioline.ru', 'bioline.ru')->subject('Заявка на сайте Just Agency');
         });
     }
 }
