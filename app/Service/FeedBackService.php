@@ -4,6 +4,7 @@ namespace App\Service;
 use Illuminate\Http\Request;
 use App\Helpers\SenderMessage;
 use App\Models\FeedbackModel;
+use App\Helpers\ValidatorForm;
 
 /**
  * Description of FeedBackService
@@ -19,11 +20,11 @@ class FeedBackService
     */
     public function boot(Request $request)
     {
-        // проверяем валидность
-        
-        FeedbackModel::insert($request); // записываем данные в бд
-        new SenderMessage($request); // отправляем сообщение пользователю // отправляем сообщение менеджеру
-
-        // если не отплавили или валидность не прошла, пишем в лог
+        if (ValidatorForm::check($request)) {
+            FeedbackModel::insert($request); // записываем данные в бд
+            $message = new SenderMessage($request); // отправляем сообщение пользователю // отправляем сообщение менеджеру
+            $message->send();
+            // если не отплавили или валидность не прошла, пишем в лог
+        }
     }
 }

@@ -16,11 +16,15 @@ class SenderMessage
     public function __construct(Request $request)
     {
         $this->requst = $request;
-        $this->sendManager();
-        $this->sendClient();
     }
 
-    public function sendManager()
+    public function send()
+    {
+        $this->manager();
+        $this->client();
+    } 
+
+    public function manager()
     {
         Mail::send('manager', [
             'name' => $this->request->name,
@@ -33,7 +37,7 @@ class SenderMessage
         });
     }
 
-    public function sendClient()
+    public function client()
     {
         Mail::send('client', [], function ($message) {
             $message->from('no-reply@bioline.ru', 'bioline.ru');
