@@ -95,26 +95,48 @@ btn_project_optimization.addEventListener('click', () => {
 btn_feedback = document.getElementsByClassName('wr-feedback')[0].getElementsByTagName('botton')[0];
 btn_feedback.addEventListener('click', () => {
 
-    axios.post('send-message', {
-        name: 'Артем',
-        email: 'test@bk.ru',
-        phone: '+79210001256',
-        type_service: 'Создание ин.-магазина'
-    })
-    .then(function (response) {
-        if (response.data == 200) {
+    is_filled_input = 0;
+    array_form_input = {
+        'name' : '', 
+        'email'  : '',
+        'phone'  : '',
+        'select-type-service'  : '', 
+        'type-site' : ''
+    };
 
+    for (key in array_form_input) {
+        if (key != 'select-type-service' || key != 'type-site') {
+            item_input = document.getElementById(key).value;
+            if (item_input) {
+                document.getElementById(key).style.border = 'solid 2px #313131';
+                array_form_input[key] = document.getElementById(key).value;;
+            } else {
+                document.getElementById(key).style.border = 'solid 2px #dd7474';
+                is_filled_input = 1;
+            }
+        } else {
+            array_form_input[key] = 'Пользователь ничего не выбрал';
         }
-        
-        console.log(response.data);
-    })
-    .catch(function (error) {
-    });
+    }
+
+    if (is_filled_input == 0) {
+        axios.post('send-message', {
+            array_form_input: array_form_input
+        })
+        .then(function (response) {
+            if (response.data == 200) {
+    
+            }
+            
+            console.log(response.data);
+        })
+        .catch(function (error) {
+        });
+    
+        alert('Отправить');
+    }
 
 
-
-
-    alert('Отправить');
 });
 
 
@@ -222,19 +244,6 @@ function showerGallery(img) {
     big_img.setAttribute("src", '/img/portfolio/gallery/' + img + '.jpg');
     $('#gallery').css('display', 'block');
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 element = document.getElementById('mySwipe');
 prevBtn = document.getElementById('prev'),
