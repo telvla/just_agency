@@ -90,8 +90,6 @@ btn_project_optimization.addEventListener('click', () => {
     scrollBlock('wr-feedback');
 });
 
-
-
 btn_feedback = document.getElementsByClassName('wr-feedback')[0].getElementsByTagName('botton')[0];
 btn_feedback.addEventListener('click', () => {
 
@@ -138,8 +136,6 @@ btn_feedback.addEventListener('click', () => {
 
 
 });
-
-
 
 /*
 btn_close_form = document.getElementsByClassName('form-close')[0];
