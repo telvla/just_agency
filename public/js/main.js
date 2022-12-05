@@ -166,8 +166,6 @@ btn_left_desktop_slider_control.addEventListener('click', () => {
         zIndex: '0',
     }, 200, "linear");
 
-    console.log(top_count_slide);
-
     console.log('лево');
 });
 
@@ -177,6 +175,7 @@ btn_right_desktop_slider_control.addEventListener('click', () => {
     console.log('право');
 });
 */
+
 btn_up = document.getElementsByClassName('wr-btn-up')[0];
 btn_up.addEventListener('click', () => {
     let destination = $('body').offset().top - 20;
