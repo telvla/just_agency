@@ -61,14 +61,6 @@ function selectTypeService() {
     }
 }
 
-/*
-btn_dev_slider = document.getElementById('screen-dev-slider').getElementsByTagName('botton')[0];
-btn_dev_slider.addEventListener('click', () => {
-    scrollBlock('wr-feedback');
-    //alert('Заказать сайт');
-});
-*/
-
 //btn - Заказать чат-бот
 btn_stages_work = document.getElementsByClassName('wr-stages-work')[0].getElementsByTagName('botton')[0];
 btn_stages_work.addEventListener('click', () => {
@@ -133,9 +125,15 @@ btn_feedback.addEventListener('click', () => {
     
         alert('Отправить');
     }
-
-
 });
+
+/*
+btn_dev_slider = document.getElementById('screen-dev-slider').getElementsByTagName('botton')[0];
+btn_dev_slider.addEventListener('click', () => {
+    scrollBlock('wr-feedback');
+    //alert('Заказать сайт');
+});
+*/
 
 /*
 btn_close_form = document.getElementsByClassName('form-close')[0];
@@ -143,6 +141,7 @@ btn_close_form.addEventListener('click', () => {
     $('.wr-form').css('display', 'none');
 });
 */
+
 /*
 btn_left_desktop_slider_control = document.getElementById('desktop-slider-control').getElementsByClassName('left')[0];
 btn_left_desktop_slider_control.addEventListener('click', () => {
