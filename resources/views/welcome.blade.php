@@ -712,6 +712,7 @@
                             Напишите нам и&nbsp;мы<br />
                             обсудим Ваш проект 
                         </h2>
+                        <input type="text" name="token" id="token" value="{{ csrf_token() }}" />
                         <input type="text" name="name" id="name" placeholder="Ваше имя*" />
                         <input type="text" name="email" id="email" placeholder="E-mail*" />
                         <input type="text" name="phone" id="phone" placeholder="Телефон*" />
@@ -722,7 +723,7 @@
                             <option value="Разработка ПО">Разработка ПО</option>
                             <option value="Оптимизация">Оптимизация</option>
                         </select>
-                        <input type="text" name="type-site" id="type-site" class="hidden" style="display: none;" />
+                        <input type="text" name="type-site" id="type-site" class="hidden" />
                         <botton>Отправить</botton>
                     </div>            
                 </section>

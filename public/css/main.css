@@ -782,6 +782,10 @@ header .box-left botton:hover {
     box-shadow: 4px 6px 2px 0px rgba(255, 121, 83, 1);        
 }
 
+#token, #type-site {
+    display: none;
+}
+
 .wr-contact-info {
     display: flow-root; 
     margin: 60px 90px 160px 90px;      

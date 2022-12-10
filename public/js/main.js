@@ -87,6 +87,7 @@ btn_feedback.addEventListener('click', () => {
 
     is_filled_input = 0;
     array_form_input = {
+        'token' : '',
         'name' : '', 
         'email'  : '',
         'phone'  : '',
