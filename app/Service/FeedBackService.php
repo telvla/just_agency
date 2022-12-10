@@ -30,7 +30,7 @@ class FeedBackService
         var_dump($this->request);
 
         /*
-        if (ValidatorForm::check($request)) {
+        if (ValidatorForm::check($request) && $request->session()->token() == $request['array_form_input']['token']) {
             FeedbackModel::insert($request);
             $message = new SenderMessage($request);
             $message->send();
