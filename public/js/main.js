@@ -110,7 +110,8 @@ btn_feedback.addEventListener('click', () => {
         }
     }
 
-    if (is_filled_input == 0) {
+    //if (is_filled_input == 0) {
+    if (0 == 0) {
         axios.post('send-message', {
             array_form_input: array_form_input
         })
