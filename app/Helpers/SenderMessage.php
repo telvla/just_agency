@@ -34,10 +34,11 @@ class SenderMessage
     public function manager() : void
     {
         Mail::send('manager', [
-            'name' => $this->request->name,
-            'email' => $this->request->mail,
-            'phone' => $this->request->phone,
-            'type_service' => $this->request->type_service
+            'name' => $this->request['array_form_input']['name'],
+            'email' => $this->request['array_form_input']['mail'],
+            'phone' => $this->request['array_form_input']['phone'],
+            'select_type_service' => $this->request['array_form_input']['select-type-service'],
+            'type_site' => $this->request['array_form_input']['type-site']
         ], function ($message) {
             $message->from('no-reply@bioline.ru', 'bioline.ru');
             $message->to('trifonov@bioline.ru', 'bioline.ru')->subject('Заявка с сайта Just Agency');

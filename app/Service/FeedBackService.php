@@ -29,10 +29,9 @@ class FeedBackService
     {
         if (ValidatorForm::check($this->request) && $this->request->session()->token() == $this->request['array_form_input']['token']) {
             FeedbackModel::insert($this->request);
-            /*
             $message = new SenderMessage($this->request);
             $message->send();
-            */
+
             return true;
         }
 
