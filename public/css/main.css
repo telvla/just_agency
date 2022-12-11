@@ -1039,6 +1039,10 @@ footer div .link:hover {
     padding: 14px;
 }
 
+#screen-mobile-portfolio .item p {
+    padding: 0px 10px 0px 10px;
+}
+
 @media(max-width: 1400px) {
     .container {
         width: 1170px;
