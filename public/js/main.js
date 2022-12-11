@@ -115,10 +115,13 @@ btn_feedback.addEventListener('click', () => {
         })
         .then(function (response) {
             if (parseInt(response.status) == 200 && parseInt(response.data) == 1) {
-                
+                alert('Ваша заявка принята');
+            } else {
+                alert('Произошла ошибка');
             }
         })
         .catch(function (error) {
+            alert('Произошла ошибка');
         });
     }
 });
