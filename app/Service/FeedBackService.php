@@ -25,7 +25,7 @@ class FeedBackService
     * @param Request $request - user data array
     * @return bool
     */
-    public function boot() //: bool
+    public function boot() : bool
     {
         if (ValidatorForm::check($this->request) && $this->request->session()->token() == $this->request['array_form_input']['token']) {
             FeedbackModel::insert($this->request);

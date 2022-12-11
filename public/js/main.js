@@ -84,7 +84,6 @@ btn_project_optimization.addEventListener('click', () => {
 
 btn_feedback = document.getElementsByClassName('wr-feedback')[0].getElementsByTagName('botton')[0];
 btn_feedback.addEventListener('click', () => {
-
     is_filled_input = 0;
     array_form_input = {
         'token' : '',
@@ -110,22 +109,17 @@ btn_feedback.addEventListener('click', () => {
         }
     }
 
-    //if (is_filled_input == 0) {
-    if (0 == 0) {
+    if (is_filled_input == 0) {
         axios.post('send-message', {
             array_form_input: array_form_input
         })
         .then(function (response) {
-            if (response.data == 200) {
-    
+            if (parseInt(response.status) == 200 && parseInt(response.data) == 1) {
+                
             }
-            
-            console.log(response.data);
         })
         .catch(function (error) {
         });
-    
-        alert('Отправить');
     }
 });
 

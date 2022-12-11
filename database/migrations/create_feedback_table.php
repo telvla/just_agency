@@ -12,6 +12,7 @@ return new class extends Migration
         email - почтовый ящик
         phone - телефон
         type_service - тип заявки
+        type_site - тип сайта
         view - обработана/просмотренна заявка        
         ip_user - ip пользователя
         created - дата создание завки
@@ -31,6 +32,7 @@ return new class extends Migration
             $table->string('email', 50);
             $table->string('phone', 20);
             $table->string('type_service', 50);
+            $table->string('type_site', 50);
             $table->string('view')->default('0');
             $table->string('ip_user', 20);
             $table->timestamp('created');

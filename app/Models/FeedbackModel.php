@@ -28,6 +28,7 @@ class FeedbackModel extends Model
             'email' => $request['array_form_input']['email'],
             'phone' => $request['array_form_input']['phone'],
             'type_service' => $request['array_form_input']['select-type-service'],
+            'type_site' => $request['array_form_input']['type-site'],
             'ip_user' => $request->ip(),
             'created' => $date
         ]);

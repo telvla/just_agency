@@ -22,7 +22,8 @@ class ValidatorForm
             'name' => 'required|string|max:60',
             'email' => 'required|email|max:50',
             'phone' => 'required|string|max:20',
-            'type_service' => 'string|max:20'
+            'select-type-service' => 'string|max:20',
+            'type-site' => 'string|max:20',
         ]);
     }
 }
