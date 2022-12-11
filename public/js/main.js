@@ -21,6 +21,7 @@ btn_menu.addEventListener('click', () => {
     height_screen = screen.height;
     $('#wr-mobile-menu').css('width', (width_screen - 45));
     $('#wr-mobile-menu').css('height', (height_screen + 100));
+    $("#wr-mobile-menu").css("display", "block");
 
     $("#wr-mobile-menu").animate({
         opacity: '1',
@@ -31,8 +32,9 @@ btn_menu.addEventListener('click', () => {
 function closeMobileMenu() {
     $("#wr-mobile-menu").animate({
         opacity: '0',
-        marginLeft: '-370px'
-    }, 500, "linear");    
+        marginLeft: '-370px',
+        display: 'none'
+    }, 500, "linear");
 }
 
 btn_top_order_project = document.getElementsByClassName('box-left')[0].getElementsByTagName('botton')[0];

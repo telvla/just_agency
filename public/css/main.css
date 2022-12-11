@@ -134,6 +134,7 @@ header .box-left botton:hover {
     opacity: 0;
     margin-left: -370px;
     padding: 0px 0px 0px 45px;
+    display: none;
 }
 
 #wr-mobile-menu .btn-close {

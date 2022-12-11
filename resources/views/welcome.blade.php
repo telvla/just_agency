@@ -645,7 +645,7 @@
                             <div class="swipe-wrap">
                                 <div>        
                                     <div class="item">
-                                        <img src="https://s.tmimgcdn.com/scr/41600/41637_01_home_original.jpg" width="100%" />
+                                        <img src="/img/portfolio/mobile/bombai.png" width="100%" />
                                         <p>
                                             Автоматизация процесса дизайнерами, проектировщиками и&nbsp;фронтендерами
                                         </p>            
@@ -653,7 +653,7 @@
                                 </div>
                                 <div>        
                                     <div class="item" onclick="showerGallery('1')">
-                                        <img src="/img/portfolio/aperio.png" width="100%" />
+                                        <img src="/img/portfolio/mobile/b2b.png" width="100%" />
                                         <p>
                                             Автоматизация процесса дизайнерами, проектировщиками и&nbsp;фронтендерами
                                         </p>                                        
@@ -661,7 +661,7 @@
                                 </div>                            
                                 <div>        
                                     <div class="item" onclick="showerGallery('2')">
-                                        <img src="/img/portfolio/fish.png" width="100%" />
+                                        <img src="/img/portfolio/mobile/brov.png" width="100%" />
                                         <p>
                                             Автоматизация процесса дизайнерами, проектировщиками и&nbsp;фронтендерами
                                         </p>                                        
@@ -669,7 +669,7 @@
                                 </div>        
                                 <div>        
                                     <div class="item">
-                                        <img src="/img/portfolio/noopii.png" width="100%" />
+                                        <img src="/img/portfolio/mobile/satil_app.png" width="100%" />
                                         <p>
                                             Автоматизация процесса дизайнерами, проектировщиками и&nbsp;фронтендерами
                                         </p>                                        
@@ -677,7 +677,7 @@
                                 </div>        
                                 <div>        
                                     <div class="item">
-                                        <img src="/img/portfolio/mebel.png" width="100%" />
+                                        <img src="/img/portfolio/mobile/um_dom.png" width="100%" />
                                         <p>
                                             Автоматизация процесса дизайнерами, проектировщиками и&nbsp;фронтендерами
                                         </p>                                        
