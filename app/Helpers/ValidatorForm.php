@@ -18,7 +18,7 @@ class ValidatorForm
     */
     public static function check(Request $request) : bool
     {
-        return Validator::make($request->all(), [
+        return Validator::make($request['array_form_input']->all(), [
             'name' => 'required|string|max:60',
             'email' => 'required|email|max:50',
             'phone' => 'required|string|max:20',

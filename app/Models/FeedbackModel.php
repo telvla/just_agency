@@ -25,10 +25,10 @@ class FeedbackModel extends Model
         $date = date("Y-m-d H:i:s");
 
         DB::table('feedback')->insert([
-            'name' => $request->name,
-            'email' => $request->mail,
-            'phone' => $request->phone,
-            'type_service' => $request->type_service,
+            'name' => $request['array_form_input']->name,
+            'email' => $request['array_form_input']->mail,
+            'phone' => $request['array_form_input']->phone,
+            'type_service' => $request['array_form_input']->type_service,
             'ip_user' => $request->ip(),
             'created' => $date
         ]);
