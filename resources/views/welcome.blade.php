@@ -798,7 +798,7 @@
             </div>
             <div id="gallery">
                 <div>
-                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <img src="/img/cancel.png" width="25" />    
                 </div>
                 <img src="" width="100%" />
             </div>

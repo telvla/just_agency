@@ -128,6 +128,14 @@ btn_feedback.addEventListener('click', () => {
     }
 });
 
+close_gallery = document.getElementById('gallery').getElementsByTagName('div')[0];
+close_gallery.addEventListener('click', () => {
+    box_gallery = document.getElementById('gallery');
+    big_img = box_gallery.getElementsByTagName('img')[1];
+    big_img.setAttribute("src", '');
+    $('#gallery').css('display', 'none');
+});
+
 /*
 btn_dev_slider = document.getElementById('screen-dev-slider').getElementsByTagName('botton')[0];
 btn_dev_slider.addEventListener('click', () => {
@@ -235,7 +243,7 @@ function showerCounterStreakDesktop() {
 
 function showerGallery(img) {
     box_gallery = document.getElementById('gallery');
-    big_img = box_gallery.getElementsByTagName('img')[0];
+    big_img = box_gallery.getElementsByTagName('img')[1];
     big_img.setAttribute("src", '/img/portfolio/gallery/' + img + '.jpg');
     $('#gallery').css('display', 'block');
 }

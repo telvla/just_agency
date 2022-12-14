@@ -30,6 +30,7 @@ class PageController extends Controller
     */
     public function send(Request $request) //: bool
     {
+        //render DTO
         $service = new FeedBackService($request);
 
         return $service->boot();
